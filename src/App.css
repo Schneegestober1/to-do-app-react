@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 li {
@@ -30,7 +31,7 @@ li {
 .input-area {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   margin: 0 auto;
 }
 
@@ -54,8 +55,7 @@ li {
 .list-box {
   background: #fff;
   width: 100%;
-  max-width: 400px;
-  /* padding: 10px 5px;  */
+  max-width: 450px;
   border: 2px solid gray;
   border-top: none;
 }
@@ -68,6 +68,10 @@ li {
   padding: 10px 5px; 
 }
 
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
 .circle-icon {
   color: #888;
 }
@@ -78,7 +82,7 @@ li {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   border: 2px solid gray;
   border-top: none;
   padding: 10px 10px; 
@@ -93,6 +97,7 @@ li {
   outline: 0;
   border-radius: 5px;
   transition: all 0.3s;
+
 }
 
 .button-box {
@@ -102,5 +107,4 @@ li {
 
 .task-controls button:hover {
   border: 1px solid pink;
-
 }
