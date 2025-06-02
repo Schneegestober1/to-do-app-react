@@ -37,7 +37,7 @@ li {
 
 .input-field {
   width: 100%;
-  padding: 10px 10px 10px 40px; 
+  padding: 15px 10px 15px 40px; 
   font-size: 16px;
   outline: none;
   border: 2px solid gray;
@@ -74,6 +74,11 @@ li {
 
 .circle-icon {
   color: #888;
+  cursor: pointer;
+}
+
+.circle-icon.completed {
+  color: green;
 }
 
 .task-controls {
@@ -88,8 +93,13 @@ li {
   padding: 10px 10px; 
 }
 
+.task-controls p {
+  font-size: 12px;
+}
+
 .task-controls button {
   background: transparent;
+  font-size: 12px;
   color: gray;
   padding: 5px;
   cursor: pointer;
@@ -103,6 +113,11 @@ li {
 .button-box {
   display: flex;
   gap: 5px;
+}
+
+.button-box button.active {
+  border: 1px solid pink;
+  font-weight: bold;
 }
 
 .task-controls button:hover {
