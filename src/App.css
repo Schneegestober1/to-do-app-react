@@ -81,6 +81,11 @@ li {
   color: green;
 }
 
+.completed-text {
+  color: gray;
+  text-decoration: line-through;
+}
+
 .task-controls {
   background: #fff;
   display: flex;
@@ -122,4 +127,8 @@ li {
 
 .task-controls button:hover {
   border: 1px solid pink;
+}
+
+.loader {
+  padding-left: 10px;
 }

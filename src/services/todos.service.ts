@@ -25,15 +25,6 @@ class TodosService {
     const { data } = await axios.patch<ITodos>(`${this.URL}/${id}`, { completed });
     return data;
   }
-
-  async deleteCompleted(): Promise<void> {
-    const todos = await this.getTodos();
-    const completedTodos = todos.filter(todo => todo.completed);
-
-    await Promise.all(
-      completedTodos.map(todo => axios.delete(`${this.URL}/${todo.id}`))
-    );
-  }
 }
 
 export const todosService = new TodosService();
